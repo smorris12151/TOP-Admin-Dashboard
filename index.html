@@ -12,19 +12,23 @@
     <div class="container">
         <div class="sidebar">
             <div class="logo">
-                <p>image placeholder</p>
-                <p>dashboard</p>
+                <img src="img/panda.svg" alt="pandaman">
+                <h2>Dashboard</h2>
             </div>
             <div class="options">
-                <p class="sidebarItem">Home</p>
-                <p class="sidebarItem">Profile</p>
-                <p class="sidebarItem">Messages</p>
-                <p class="sidebarItem">History</p>
-                <p class="sidebarItem">Tasks</p>
-                <p class="sidebarItem">Communities</p>
-                <p class="sidebarItem">Settings</p>
-                <p class="sidebarItem">Support</p>
-                <p class="sidebarItem">Privacy</p>
+                <div class="userButtons">
+                    <button class="sidebarItem"> <img src="img/home-outline.svg" alt="home logo"> Home</button>
+                    <button class="sidebarItem"><img src="img/account.svg" alt="profile logo"> Profile</button>
+                    <button class="sidebarItem"><img src="img/message-outline.svg" alt="messages logo"> Messages</button>
+                    <button class="sidebarItem"><img src="img/history.svg" alt="history logo"> History</button>
+                    <button class="sidebarItem"><img src="img/format-list-checks.svg" alt="tasks logo"> Tasks</button>
+                    <button class="sidebarItem"><img src="img/account-group.svg" alt="communities logo"> Communities</button>
+                </div>
+                <div class="backendButtons">
+                    <button class="sidebarItem"><img src="img/cog.svg" alt="settings logo"> Settings</button>
+                    <button class="sidebarItem"><img src="img/help-box-outline.svg" alt="support logo"> Support</button>
+                    <button class="sidebarItem"><img src="img/shield-account.svg" alt="privacy logo"> Privacy</button>
+                </div>
             </div>
         </div>
         <div class="header">
@@ -34,14 +38,15 @@
                     <input type="search" name="search" id="search">
                 </div>
                 <div class="icons">
-                    <div>Bell </div>
-                    <div>ProfPic</div>
+                    <img src="img/bell-outline.svg" alt="bell" id="bell">
+                    <img src="img/1576315709GeneRoddenberry1976.svg" alt="GeneRoddenberry" class='image'
+                    id="userProfPic">
                     <div>Namey Name</div>
                 </div>
            
           
                 <div class="bottomHeaderLeft">
-                    <div>profPic bigger</div>
+                    <img src="img/1576315709GeneRoddenberry1976.svg" alt="GeneRoddenberry" class="image" id="userProfPic">
                     <ul>
                         <li class="smol">Hi there,</li>
                         <li>Namey Name (@nameyName)</li>
@@ -139,25 +144,33 @@
             <form id="trendingForm">
                 <fieldset>
                     <legend>Trending</legend>
-                        <div>
-                            <div class="image">profpic</div>
-                            <h3>@tegan</h3>
-                            <p>World Peace Builder</p>
+                        <div class="trendingPeople">
+                            <img src="img/earthperson.svg" alt="earthperson" class="image">
+                            <div class="personInfo">
+                                <h3>@tegan</h3>
+                                <p>World Peace Builder</p>
+                            </div>
                         </div>
-                        <div>
-                            <div class="image">extprofpic2</div>
-                            <h3>@morgan</h3>
-                            <p>Super Cool Project</p>
+                        <div class="trendingPeople">
+                            <img src="img/elkbuntu-Young-Man.svg" alt="young man" class="image">
+                            <div class="personInfo">
+                                <h3>@morgan</h3>
+                                <p>Super Cool Project</p>
+                            </div>
                         </div>
-                        <div>
-                            <div class="image">extprofpic3</div>
-                            <h3>@kendall</h3>
-                            <p>Life Changing App</p>
+                        <div class="trendingPeople">
+                            <img src="img/tomas_arad_smiles_blonde_face.svg" alt="blonde lady" class="image">
+                            <div class="personInfo">
+                                <h3>@kendall</h3>
+                                <p>Life Changing App</p>
+                            </div>
                         </div>
-                        <div>
-                            <div class="image">extProfPic4</div>
-                            <h3>@alex</h3>
-                            <p>No Traffic Maker</p>
+                        <div class="trendingPeople">
+                            <img src="img/hands-up.svg" alt="hands up person" class="image">
+                            <div class="personInfo">
+                                <h3>@alex</h3>
+                                <p>No Traffic Maker</p>
+                            </div>
                         </div>
                 </fieldset>
             </form>
