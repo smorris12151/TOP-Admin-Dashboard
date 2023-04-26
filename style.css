@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
+    font-family: 'Jost', sans-serif;
 }
 h2,
 p,
@@ -129,13 +129,16 @@ gap: 15px;
 }
 .greeting>ul{
     display: grid;
-    font-weight: bolder;
-    font-size: 1.3rem;
     align-items: center;
 }
 
+.userName{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
 .smol{
-    font-size: medium;
+    font-size: 1.1rem;
 }
 
 .btns{
