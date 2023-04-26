@@ -9,43 +9,58 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="logo">
-                <img src="img/panda.svg" alt="pandaman">
-                <h2>Dashboard</h2>
-            </div>
-            <div class="options">
-                <div class="userButtons">
-                    <button class="sidebarItem"> <img src="img/home-outline.svg" alt="home logo"> Home</button>
-                    <button class="sidebarItem"><img src="img/account.svg" alt="profile logo"> Profile</button>
-                    <button class="sidebarItem"><img src="img/message-outline.svg" alt="messages logo"> Messages</button>
-                    <button class="sidebarItem"><img src="img/history.svg" alt="history logo"> History</button>
-                    <button class="sidebarItem"><img src="img/format-list-checks.svg" alt="tasks logo"> Tasks</button>
-                    <button class="sidebarItem"><img src="img/account-group.svg" alt="communities logo"> Communities</button>
-                </div>
-                <div class="backendButtons">
-                    <button class="sidebarItem"><img src="img/cog.svg" alt="settings logo"> Settings</button>
-                    <button class="sidebarItem"><img src="img/help-box-outline.svg" alt="support logo"> Support</button>
-                    <button class="sidebarItem"><img src="img/shield-account.svg" alt="privacy logo"> Privacy</button>
-                </div>
-            </div>
+<div class="container">
+    <div class="sidebar">
+        <div class="logo">
+            <img src="img/panda.svg" alt="pandaman">
+            <h2>Dashboard</h2>
         </div>
+
+        <ul class="userButtons">
+            <li>
+                <button class="sidebarItem"> <img src="img/home-outline.svg" alt="home logo"> Home</button></li>
+            <li>
+                <button class="sidebarItem"><img src="img/account.svg" alt="profile logo"> Profile</button>
+            </li>
+            <li>
+                <button class="sidebarItem"><img src="img/message-outline.svg" alt="messages logo"> Messages</button>
+            </li>
+            <li>
+                <button class="sidebarItem"><img src="img/history.svg" alt="history logo"> History</button>
+            </li>
+            <li>
+                <button class="sidebarItem"><img src="img/format-list-checks.svg" alt="tasks logo"> Tasks</button>
+            </li>
+            <li>
+                <button class="sidebarItem"><img src="img/account-group.svg" alt="communities logo"> Communities</button>
+            </li>
+        </ul>
+        <ul class="backendButtons">
+            <li>
+                <button class="sidebarItem"><img src="img/cog.svg" alt="settings logo"> Settings</button>
+            </li>
+            <li> 
+                <button class="sidebarItem"><img src="img/help-box-outline.svg" alt="support logo"> Support</button></li>
+            <li>
+                <button class="sidebarItem"><img src="img/shield-account.svg" alt="privacy logo"> Privacy</button>
+            </li>
+        </ul>
+    
+    </div>
+    <div class="secondaryContainer">
         <div class="header">
-            
                 <div class="searchBar">
-                    <div>Mag Glass</div>
+                    <img src="img/search.svg" alt="mag glass" >
                     <input type="search" name="search" id="search">
                 </div>
                 <div class="icons">
-                    <img src="img/bell-outline.svg" alt="bell" id="bell">
+                    <img src="img/bell-outline.svg" alt="bell" id="bell" >
                     <img src="img/1576315709GeneRoddenberry1976.svg" alt="GeneRoddenberry" class='image'
                     id="userProfPic">
-                    <div>Namey Name</div>
+                    <p>Namey Name</p>
                 </div>
-           
-          
-                <div class="bottomHeaderLeft">
+        
+                <div class="greeting">
                     <img src="img/1576315709GeneRoddenberry1976.svg" alt="GeneRoddenberry" class="image" id="userProfPic">
                     <ul>
                         <li class="smol">Hi there,</li>
@@ -60,66 +75,102 @@
         </div>
         <div class="contentBody">
             <form id="contentForm">
-                <fieldset>
+                <fieldset class="cardGrid">
                     <legend id="projectLegend">Your Projects</legend>
                     <div class="card">
                         <h2>Super Cool Project</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
                         </p>
                         <div class="cardIcons">
-                            <div>star</div>
-                            <div>eye</div>
-                            <div>share</div>
+                            <button>
+                                <img src="img/star.svg" alt="star">
+                            </button>
+                            <button>
+                                <img src="img/eye.svg" alt="eye">
+                            </button>
+                            <button>
+                                <img src="img/share.svg" alt="share">
+                            </button>
                         </div>
                     </div>
                     <div class="card">
                         <h2>Less Cool Project</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation uoccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod templit anim id est laborum.
                         </p>
                         <div class="cardIcons">
-                            <div>star</div>
-                            <div>eye</div>
-                            <div>share</div>
+                            <button>
+                                <img src="img/star.svg" alt="star">
+                            </button>
+                            <button>
+                                <img src="img/eye.svg" alt="eye">
+                            </button>
+                            <button>
+                                <img src="img/share.svg" alt="share">
+                            </button>
                         </div>
                     </div>
                     <div class="card">
                         <h2>Impossible App</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  velit esse cillum dolore eu fugiat nulla pariatur. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <div class="cardIcons">
-                            <div>star</div>
-                            <div>eye</div>
-                            <div>share</div>
+                            <button>
+                                <img src="img/star.svg" alt="star">
+                            </button>
+                            <button>
+                                <img src="img/eye.svg" alt="eye">
+                            </button>
+                            <button>
+                                <img src="img/share.svg" alt="share">
+                            </button>
                         </div>
                     </div>
                     <div class="card">
                         <h2>Easy Peasy App</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ddolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>Lorem ipsum dolor sit amet, roident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <div class="cardIcons">
-                            <div>star</div>
-                            <div>eye</div>
-                            <div>share</div>
+                            <button>
+                                <img src="img/star.svg" alt="star">
+                            </button>
+                            <button>
+                                <img src="img/eye.svg" alt="eye">
+                            </button>
+                            <button>
+                                <img src="img/share.svg" alt="share">
+                            </button>
                         </div>
                     </div>
                     <div class="card">
                         <h2>Ad Blocker</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniain culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <div class="cardIcons">
-                            <div>star</div>
-                            <div>eye</div>
-                            <div>share</div>
+                            <button>
+                                <img src="img/star.svg" alt="star">
+                            </button>
+                            <button>
+                                <img src="img/eye.svg" alt="eye">
+                            </button>
+                            <button>
+                                <img src="img/share.svg" alt="share">
+                            </button>
                         </div>
                     </div>
                     <div class="card">
                         <h2>Money Maker</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                        <p>Lorem ipsum dolor sit amet, enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                         </p>
                         <div class="cardIcons">
-                            <div>star</div>
-                            <div>eye</div>
-                            <div>share</div>
+                            <button>
+                                <img src="img/star.svg" alt="star">
+                            </button>
+                            <button>
+                                <img src="img/eye.svg" alt="eye">
+                            </button>
+                            <button>
+                                <img src="img/share.svg" alt="share">
+                            </button>
                         </div>
                     </div>
                 </fieldset>
@@ -145,14 +196,14 @@
                 <fieldset>
                     <legend>Trending</legend>
                         <div class="trendingPeople">
-                            <img src="img/earthperson.svg" alt="earthperson" class="image">
+                            <!-- <img src="img/earthperson.svg" alt="earthperson" class="image"> -->
                             <div class="personInfo">
                                 <h3>@tegan</h3>
                                 <p>World Peace Builder</p>
                             </div>
                         </div>
                         <div class="trendingPeople">
-                            <img src="img/elkbuntu-Young-Man.svg" alt="young man" class="image">
+                            <!-- <img src="img/elkbuntu-Young-Man.svg" alt="young man" class="image"> -->
                             <div class="personInfo">
                                 <h3>@morgan</h3>
                                 <p>Super Cool Project</p>
@@ -175,8 +226,9 @@
                 </fieldset>
             </form>
         </div>
-        <div class="footer">Sam Morris 2023 <a href="https://github.com/smorris12151">Github</a></div>
-
     </div>
+    <div class="footer">Sam Morris 2023 <a href="https://github.com/smorris12151">Github</a></div>
+
+</div>
 </body>
 </html>

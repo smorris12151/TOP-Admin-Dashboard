@@ -1,206 +1,221 @@
-body{
-    margin:0;
-}
 *{
     box-sizing: border-box;
-}
-
-h3,
-h2,
-p{
     margin: 0;
-}
-
-button{
-    appearance: none;
-    background-color:#92400e;
-    border: none;
-    border-radius: 10px;
-    color: #fffbeb;
-}
-
-fieldset{
-    border:none;
+    padding: 0;
+    list-style: none;
 
 }
-legend{
-    font-size: 1.7rem;
+h2,
+p,
+h3,
+legend,
+li{
+    font-size: 1rem;
+    color: #1e293b;
+}
+img{
+    height:30px;
 }
 
+.image{
+    border-radius: 100%;
+    background-color: pink;
+    box-shadow: 0px 1px 2px 0px #334155;
+    aspect-ratio: 1;
+
+}
 .container{
     display: grid;
-    grid-template-columns: minmax(auto, 250px) 1fr;
-    grid-template-rows: 200px 1fr 50px;
+    grid-template-columns: min(22%, 225px) 4fr;
+    grid-template-rows: 1fr 60px;
+    min-height: 100vh;
 }
 
 .sidebar{
-    padding: 15px;
-    grid-row: 1/3;
     display: grid;
-    grid-template-rows: 100px 150px 1fr 100px;
-    background-color: #92400e;
-    color: #fffbeb;
+    grid-row: 1/2;
+
+    grid-template-rows: auto auto 1fr;
+    padding: 15px;
+    gap: 60px;
+    background-color: #94a3b8;
+    color: #f8fafc;
+    overflow: scroll;
 
 }
-
-img{
-    fill: #fffbeb;
-}
-
 
 .logo{
     display: grid;
-    grid-template-columns: 1fr 3fr ;
-    gap: 15px;
+    gap: 12px;
+    grid-template-columns: 50px 1fr;
     align-items: center;
-    font-size: 1.2rem;
-}
-.options{
-    display: grid;
-    gap: 60px;
 }
 
-.userButtons,
-.backendButtons{
-    display: grid;
+.logo>img{
+    height: 50px;
 }
 
 .sidebarItem{
     display: grid;
-    padding: 0px 15px;
-    grid-template-columns: 1fr 3fr;
-    align-items:center;
-    gap: 15px;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    margin: 15px;
+    background-color: #94a3b8;
+    color: #f8fafc;
+    border-style: none;
+
+}
+
+.secondaryContainer{
+    display: grid;
+    grid-template-rows: 200px 1fr;
 }
 
 .header{
-    padding: 15px;
     display: grid;
+    grid-template-columns: 1fr min(50%, 350px);
+    align-items: center;
+    padding-left: 30px;
+    background-color: #f8fafc;
     gap: 15px;
-    grid-template-columns: 2fr 1fr;
-    background-color: #f0f9ff;
+    box-shadow: 0px 2px 4px 1px #94a3b8;
 
 }
 
 .searchBar{
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
     align-items: center;
 }
 
 #search{
+    appearance: none;
     border-radius: 25px;
-    height: 2rem;
-}
+    background-color: #e2e8f0;
+    padding: .5rem;
+    border-style: none;
+    box-shadow: 0px 1px 2px 1px #cbd5e1;
 
-.contentBody{
-    background-color: #e0f2fe;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
+#search:focus{
+    outline: #f1f5f9;
+    box-shadow: 0px 1px 2px 1px rgba(51,65,85,1);
 
-#contentForm{
-    grid-row: 1/3;
-    display: grid;
-    padding: 15px;
-}
-
-#contentForm>fieldset{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
-    
-    gap: 30px;
-}
-
-.card{
-    display: grid;
-    gap: 30px;
-    max-width: 50ch;
-    max-height: 50%;
-    padding: 30px;
-    overflow-y: unset;
-    border-radius: 15px;
-    background-color: #dbc6c6;
-    grid-template-rows: 10% 1fr 10%;
-}
-
-.card>p{
-    overflow: scroll;
-}
-.cardIcons{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 15px;
-    justify-content: end;
-}
-
-#announcementsForm{
-    grid-column: 2;
-    grid-row: 1;
-    display: grid;
-    padding: 15px;
-}
-#trendingForm{
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    padding: 15px;
-}
-
-.footer{
-    grid-column: 1 /-1;
-   display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #120e0e;
-    color: antiquewhite;
 }
 
 .icons{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    gap:15px;
+}
+
+.greeting{
 display: grid;
+grid-template-columns: 65px 1fr;
 gap: 15px;
-grid-template-columns: 2fr 1fr 3fr;
-align-items: center;
 }
 
-.image{
-    border-radius: 100%;
-    height: 50px;
-    background-color: pink;
-    aspect-ratio: 1;
-    padding: 0;
-    margin: 0;
+.greeting>#userProfPic{
+    height:65px;
 }
-#bell{
-    height: 30px;
-    justify-self: end;
-}
-
-#userProfPic{
-    height: 50px;
-    border-radius: 100%;
-}
-
-.bottomHeaderLeft>#userProfPic{
-    height: 70px;
-}
-
-#trendingForm>fieldset{
+.greeting>ul{
     display: grid;
-    padding: 15px;
-    gap: 15px;
-
-}
-
-.trendingPeople{
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    gap: 15px;
+    font-weight: bolder;
+    font-size: 1.3rem;
     align-items: center;
 }
 
-.personInfo{
+.smol{
+    font-size: medium;
+}
+
+.btns{
     display: grid;
-    justify-self: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-right: 45px;
+}
+
+.btns>button{
+    appearance: none;
+    border-style: none;
+    height: 2rem;
+    border-radius: 25px;
+    background-color: #94a3b8;
+    color: #f1f5f9;
+}
+.btns>button:active{
+    box-shadow: 0px 0px 2px 1px rgba(51,65,85,1);
+}
+
+.contentBody{
+    display: grid;
+    background-color: #e2e8f0;
+    grid-template-columns: 1fr min(30%, 350px);
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    gap: 15px;
+}
+
+#contentForm{
+    grid-row: 1/-1;
+}
+
+.cardGrid{
+    display: grid;
+    gap: 15px;
+    border-style: none;
+    padding: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(35ch,1fr));
+}
+
+#projectLegend{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.card{
+    display: grid;
+    background-color: #fffeff;
+    box-shadow: 0px 1px 2px 1px rgba(51,65,85,1);
+    border-radius: 5px;
+    padding: 15px;
+    grid-template-rows: 1rem 1fr 1fr;
+    gap:15px;
+
+}
+.card>h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card>p{
+    color: #94a3b8;
+}
+.cardIcons{
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 15px;
+    justify-content: end;
+    align-items: center;
+
+}
+.cardIcons>button{
+    border-style: none;
+    background-color: #fffeff;
+}
+
+.cardIcons>button>img{
+    height: 1.5rem;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    grid-row: 2;
+    grid-column: 1 / -1;
+    text-align: center;
+    display: grid;
 }
